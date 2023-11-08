@@ -8,9 +8,8 @@ const DB = createPool({
    port: DB_PORT,
    database: DB_NAME,
    charset: "utf8",
-   waitForConnections: true,
    ssl: {
-      rejectUnauthorized: false
+      rejectUnauthorized: true
    }
 })
 
